@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hakan Özenç — Kişisel Web Sitesi</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body class="page-home">
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-logo">H<span>Ö</span></div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menü">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active">Anasayfa</a></li>
+      <li><a href="hakkimda.html">Hakkımda</a></li>
+      <li><a href="beceriler.html">Beceriler</a></li>
+      <li><a href="sertifikalar.html">Sertifikalar</a></li>
+      <li><a href="projeler.html">Projeler</a></li>
+      <li><a href="iletisim.html" class="nav-cta">İletişim</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="orb orb1"></div>
+      <div class="orb orb2"></div>
+      <div class="grid-lines"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-tag animate-up">Merhaba, ben</p>
+      <h1 class="hero-name animate-up delay-1">Hakan<br><span>Özenç</span></h1>
+      <p class="hero-role animate-up delay-2" id="typewriter"></p>
+      <p class="hero-desc animate-up delay-3">
+        Yenilikçi çözümler üreten, kullanıcı odaklı dijital deneyimler tasarlayan profesyonel.
+      </p>
+      <div class="hero-btns animate-up delay-4">
+        <a href="projeler.html" class="btn-primary">Projelerimi Gör</a>
+        <a href="iletisim.html" class="btn-outline">İletişime Geç</a>
+      </div>
+    </div>
+    <div class="hero-visual animate-up delay-2">
+      <div class="avatar-ring">
+        <div class="avatar-inner">
+          <span class="avatar-initials">HÖ</span>
+        </div>
+        <svg class="ring-svg" viewBox="0 0 300 300">
+          <circle cx="150" cy="150" r="140" fill="none" stroke="url(#ringGrad)" stroke-width="2" stroke-dasharray="6 4"/>
+        </svg>
+        <div class="orbit-dot dot1"></div>
+        <div class="orbit-dot dot2"></div>
+      </div>
+    </div>
+    <div class="scroll-hint animate-up delay-5">
+      <span>Aşağı Kaydır</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- QUICK STATS -->
+  <section class="stats">
+    <div class="stat-card">
+      <span class="stat-num" data-target="50">0</span><span class="stat-sym">+</span>
+      <p>Tamamlanan Proje</p>
+    </div>
+    <div class="stat-card">
+      <span class="stat-num" data-target="5">0</span><span class="stat-sym">+</span>
+      <p>Yıl Deneyim</p>
+    </div>
+    <div class="stat-card">
+      <span class="stat-num" data-target="30">0</span><span class="stat-sym">+</span>
+      <p>Mutlu Müşteri</p>
+    </div>
+    <div class="stat-card">
+      <span class="stat-num" data-target="10">0</span><span class="stat-sym">+</span>
+      <p>Sertifika</p>
+    </div>
+  </section>
+
+  <!-- FEATURED -->
+  <section class="featured">
+    <h2 class="section-title">Öne Çıkanlar</h2>
+    <div class="featured-grid">
+      <a href="hakkimda.html" class="feat-card">
+        <div class="feat-icon">👤</div>
+        <h3>Hakkımda</h3>
+        <p>Benim kim olduğumu, vizyonumu ve değerlerimi keşfet.</p>
+      </a>
+      <a href="beceriler.html" class="feat-card">
+        <div class="feat-icon">⚡</div>
+        <h3>Beceriler</h3>
+        <p>Teknik ve kişisel yetkinliklerimi incele.</p>
+      </a>
+      <a href="projeler.html" class="feat-card">
+        <div class="feat-icon">🚀</div>
+        <h3>Projeler</h3>
+        <p>Geliştirdiğim ürünleri ve çalışmaları görüntüle.</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>© 2025 <strong>Hakan Özenç</strong> — Tüm hakları saklıdır.</p>
+    <div class="footer-links">
+      <a href="#">LinkedIn</a>
+      <a href="#">GitHub</a>
+      <a href="#">Twitter</a>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

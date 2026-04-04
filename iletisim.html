@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>İletişim — Hakan Özenç</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body class="page-inner">
+
+  <nav id="navbar">
+    <div class="nav-logo">H<span>Ö</span></div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menü">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Anasayfa</a></li>
+      <li><a href="hakkimda.html">Hakkımda</a></li>
+      <li><a href="beceriler.html">Beceriler</a></li>
+      <li><a href="sertifikalar.html">Sertifikalar</a></li>
+      <li><a href="projeler.html">Projeler</a></li>
+      <li><a href="iletisim.html" class="nav-cta active">İletişim</a></li>
+    </ul>
+  </nav>
+
+  <section class="page-hero">
+    <div class="page-hero-bg">
+      <div class="orb orb1"></div>
+    </div>
+    <div class="page-hero-content animate-up">
+      <span class="page-tag">05 / İletişim</span>
+      <h1>Selamlaşalım</h1>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <div class="contact-grid">
+
+      <div class="contact-info animate-left">
+        <h2>Birlikte <span>çalışalım.</span></h2>
+        <p>Bir projeniz mi var? Fikir alışverişi yapmak ister misiniz? Mesaj bırakın, en kısa sürede döneyim.</p>
+
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="ci-icon">✉️</div>
+            <div>
+              <p class="ci-label">E-posta</p>
+              <a href="mailto:hakan@example.com" class="ci-val">hakan@example.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="ci-icon">📍</div>
+            <div>
+              <p class="ci-label">Konum</p>
+              <p class="ci-val">İstanbul, Türkiye</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="ci-icon">📞</div>
+            <div>
+              <p class="ci-label">Telefon</p>
+              <a href="tel:+905001234567" class="ci-val">+90 500 123 45 67</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-social">
+          <a href="#" class="social-btn">LinkedIn</a>
+          <a href="#" class="social-btn">GitHub</a>
+          <a href="#" class="social-btn">Twitter</a>
+        </div>
+      </div>
+
+      <div class="contact-form-col animate-right">
+        <div class="form-card" id="contactForm">
+          <div class="form-group">
+            <label for="fname">Ad Soyad</label>
+            <input type="text" id="fname" placeholder="Adınız Soyadınız" />
+          </div>
+          <div class="form-group">
+            <label for="femail">E-posta</label>
+            <input type="email" id="femail" placeholder="ornek@mail.com" />
+          </div>
+          <div class="form-group">
+            <label for="fsubject">Konu</label>
+            <input type="text" id="fsubject" placeholder="Mesajın konusu" />
+          </div>
+          <div class="form-group">
+            <label for="fmsg">Mesaj</label>
+            <textarea id="fmsg" rows="5" placeholder="Mesajınızı buraya yazın..."></textarea>
+          </div>
+          <button class="btn-primary full-width" id="sendBtn" onclick="handleSend()">Mesaj Gönder</button>
+          <div id="formSuccess" class="form-success" style="display:none;">
+            ✅ Mesajınız gönderildi! En kısa sürede dönüş yapacağım.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>© 2025 <strong>Hakan Özenç</strong> — Tüm hakları saklıdır.</p>
+    <div class="footer-links">
+      <a href="#">LinkedIn</a>
+      <a href="#">GitHub</a>
+      <a href="#">Twitter</a>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

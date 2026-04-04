@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projeler — Hakan Özenç</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body class="page-inner">
+
+  <nav id="navbar">
+    <div class="nav-logo">H<span>Ö</span></div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menü">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Anasayfa</a></li>
+      <li><a href="hakkimda.html">Hakkımda</a></li>
+      <li><a href="beceriler.html">Beceriler</a></li>
+      <li><a href="sertifikalar.html">Sertifikalar</a></li>
+      <li><a href="projeler.html" class="active">Projeler</a></li>
+      <li><a href="iletisim.html" class="nav-cta">İletişim</a></li>
+    </ul>
+  </nav>
+
+  <section class="page-hero">
+    <div class="page-hero-bg">
+      <div class="orb orb2"></div>
+    </div>
+    <div class="page-hero-content animate-up">
+      <span class="page-tag">04 / Projeler</span>
+      <h1>Çalışmalarım</h1>
+    </div>
+  </section>
+
+  <section class="projects-section">
+    <div class="skills-intro animate-up">
+      <p>Geliştirdiğim öne çıkan projeler ve çalışmalar.</p>
+    </div>
+
+    <!-- FILTER -->
+    <div class="filter-bar animate-up">
+      <button class="filter-btn active" data-filter="all">Tümü</button>
+      <button class="filter-btn" data-filter="web">Web</button>
+      <button class="filter-btn" data-filter="mobil">Mobil</button>
+      <button class="filter-btn" data-filter="tasarim">Tasarım</button>
+    </div>
+
+    <div class="projects-grid" id="projectsGrid">
+
+      <div class="proj-card animate-up" data-cat="web">
+        <div class="proj-thumb">
+          <div class="proj-thumb-inner" style="background: linear-gradient(135deg,#1a1a2e,#16213e);">
+            <span>E-Ticaret</span>
+          </div>
+          <div class="proj-overlay">
+            <a href="#" class="proj-btn">Demo</a>
+            <a href="#" class="proj-btn">GitHub</a>
+          </div>
+        </div>
+        <div class="proj-info">
+          <div class="proj-tags"><span>React</span><span>Node.js</span><span>MongoDB</span></div>
+          <h3>Modern E-Ticaret Platformu</h3>
+          <p>Tam işlevsel, ödeme entegrasyonlu modern e-ticaret uygulaması.</p>
+        </div>
+      </div>
+
+      <div class="proj-card animate-up delay-1" data-cat="web">
+        <div class="proj-thumb">
+          <div class="proj-thumb-inner" style="background: linear-gradient(135deg,#0d3b2e,#1a5c45);">
+            <span>Dashboard</span>
+          </div>
+          <div class="proj-overlay">
+            <a href="#" class="proj-btn">Demo</a>
+            <a href="#" class="proj-btn">GitHub</a>
+          </div>
+        </div>
+        <div class="proj-info">
+          <div class="proj-tags"><span>Vue.js</span><span>Python</span><span>PostgreSQL</span></div>
+          <h3>Analitik Dashboard</h3>
+          <p>Gerçek zamanlı veri görselleştirme ve raporlama platformu.</p>
+        </div>
+      </div>
+
+      <div class="proj-card animate-up delay-2" data-cat="mobil">
+        <div class="proj-thumb">
+          <div class="proj-thumb-inner" style="background: linear-gradient(135deg,#2d1b69,#4a2c8a);">
+            <span>Mobil App</span>
+          </div>
+          <div class="proj-overlay">
+            <a href="#" class="proj-btn">Demo</a>
+            <a href="#" class="proj-btn">GitHub</a>
+          </div>
+        </div>
+        <div class="proj-info">
+          <div class="proj-tags"><span>React Native</span><span>Firebase</span></div>
+          <h3>Sağlık Takip Uygulaması</h3>
+          <p>Kullanıcı sağlık verilerini izleyen cross-platform mobil uygulama.</p>
+        </div>
+      </div>
+
+      <div class="proj-card animate-up" data-cat="tasarim">
+        <div class="proj-thumb">
+          <div class="proj-thumb-inner" style="background: linear-gradient(135deg,#3d1a00,#7a3a00);">
+            <span>UI Kit</span>
+          </div>
+          <div class="proj-overlay">
+            <a href="#" class="proj-btn">Demo</a>
+            <a href="#" class="proj-btn">GitHub</a>
+          </div>
+        </div>
+        <div class="proj-info">
+          <div class="proj-tags"><span>Figma</span><span>CSS</span></div>
+          <h3>Design System & UI Kit</h3>
+          <p>100+ bileşen içeren kapsamlı tasarım sistemi.</p>
+        </div>
+      </div>
+
+      <div class="proj-card animate-up delay-1" data-cat="web">
+        <div class="proj-thumb">
+          <div class="proj-thumb-inner" style="background: linear-gradient(135deg,#001a3d,#003380);">
+            <span>SaaS</span>
+          </div>
+          <div class="proj-overlay">
+            <a href="#" class="proj-btn">Demo</a>
+            <a href="#" class="proj-btn">GitHub</a>
+          </div>
+        </div>
+        <div class="proj-info">
+          <div class="proj-tags"><span>Next.js</span><span>AWS</span><span>Stripe</span></div>
+          <h3>Proje Yönetim SaaS</h3>
+          <p>Ekipler için abonelik tabanlı proje yönetim aracı.</p>
+        </div>
+      </div>
+
+      <div class="proj-card animate-up delay-2" data-cat="mobil">
+        <div class="proj-thumb">
+          <div class="proj-thumb-inner" style="background: linear-gradient(135deg,#1a002a,#3a0060);">
+            <span>Chat App</span>
+          </div>
+          <div class="proj-overlay">
+            <a href="#" class="proj-btn">Demo</a>
+            <a href="#" class="proj-btn">GitHub</a>
+          </div>
+        </div>
+        <div class="proj-info">
+          <div class="proj-tags"><span>Flutter</span><span>Socket.io</span></div>
+          <h3>Gerçek Zamanlı Chat</h3>
+          <p>Uçtan uca şifreli mesajlaşma uygulaması.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>© 2025 <strong>Hakan Özenç</strong> — Tüm hakları saklıdır.</p>
+    <div class="footer-links">
+      <a href="#">LinkedIn</a>
+      <a href="#">GitHub</a>
+      <a href="#">Twitter</a>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
