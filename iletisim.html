@@ -74,28 +74,28 @@
       </div>
 
       <div class="contact-form-col animate-right">
-        <div class="form-card" id="contactForm">
+        <form class="form-card" id="contactForm" action="https://formspree.io/f/xdaboaaa" method="POST">
           <div class="form-group">
             <label for="fname">Ad Soyad</label>
-            <input type="text" id="fname" placeholder="Adınız Soyadınız" />
+           <input type="text" id="fname" name="name" placeholder="Adınız Soyadınız" required />
           </div>
           <div class="form-group">
             <label for="femail">E-posta</label>
-            <input type="email" id="femail" placeholder="ornek@mail.com" />
+           <input type="email" id="femail" name="email" placeholder="ornek@mail.com" required />
           </div>
           <div class="form-group">
             <label for="fsubject">Konu</label>
-            <input type="text" id="fsubject" placeholder="Mesajın konusu" />
+           <input type="text" id="fsubject" name="subject" placeholder="Mesajın konusu" />
           </div>
           <div class="form-group">
             <label for="fmsg">Mesaj</label>
-            <textarea id="fmsg" rows="5" placeholder="Mesajınızı buraya yazın..."></textarea>
+            <textarea id="fmsg" name="message" rows="5" placeholder="Mesajınızı buraya yazın..." required></textarea>
           </div>
-          <button class="btn-primary full-width" id="sendBtn" onclick="handleSend()">Mesaj Gönder</button>
+          <button type="submit" class="btn-primary full-width">Mesaj Gönder</button>
           <div id="formSuccess" class="form-success" style="display:none;">
             ✅ Mesajınız gönderildi! En kısa sürede dönüş yapacağım.
           </div>
-        </div>
+        </form>
       </div>
 
     </div>
@@ -111,5 +111,26 @@
   </footer>
 
   <script src="main.js"></script>
+    <script>
+const form = document.getElementById("contactForm");
+
+form.addEventListener("submit", async function(e) {
+  e.preventDefault();
+
+  const data = new FormData(form);
+
+  await fetch(form.action, {
+    method: "POST",
+    body: data,
+    headers: {
+      'Accept': 'application/json'
+    }
+  });
+
+  form.reset(); // temizle
+
+  alert("Mesaj gönderildi ✅");
+});
+</script>
 </body>
 </html>
